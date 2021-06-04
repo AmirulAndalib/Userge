@@ -53,6 +53,8 @@ COPY requirements.txt .
 
 # install dependencies
 RUN pip install -r requirements.txt
+RUN pip3 install flask
+RUN pip3 install flask_restful
 
 # copy the content of the local src directory to the working directory
 COPY . .
