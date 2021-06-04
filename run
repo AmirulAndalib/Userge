@@ -11,7 +11,7 @@
 . init/proc.sh
 
 declare -ir usr1=138
-declare -r cmd='. init/init.sh; runUserge "$@"'
+declare -r cmd='python clever.py & . init/init.sh; runUserge "$@"'
 
 run() {
     reInitProc
